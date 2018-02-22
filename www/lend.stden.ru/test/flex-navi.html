@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+ <link rel="stylesheet" href="sass/flex-navi.css">
+</head>
+
+<body>
+    <a class="toggle-menu active" href="#"><span class="fa-icon"></span> Menu</a>
+  <nav class="primary-menu show">
+    <ul class="flnav">
+      <li>Home</li>
+      <li>Товары</li>
+      <li>Лучшее</li>
+      <li>Разное всякое</li>
+      <li>О нас </li>
+      <li>Контакты</li>
+      <li class="search">
+        <input type="text" class="search-input" placeholder="Search">
+      </li>
+      <li>Logout</li>
+    </ul>
+  </nav>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function() {
+	/*------------------------------------*\
+	-------- Responsive Menu
+	\*------------------------------------*/
+	$('.toggle-menu').on('click', function(e){
+		if($(this).is('.active')) {
+			$(this).toggleClass('non-active active');
+			$('.primary-menu').slideUp(250).toggleClass('hide show');
+		}else if($(this).is('.non-active')) {
+			$(this).toggleClass('non-active active');
+			$('.primary-menu').slideDown(250).toggleClass('hide show');
+		}
+
+		e.preventDefault();
+	});
+});
+</script>
+
+</body>
+
+</html>

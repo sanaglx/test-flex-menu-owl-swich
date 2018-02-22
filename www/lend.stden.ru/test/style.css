@@ -1,0 +1,125 @@
+/*
+* @Author: sana
+* @Date:   2017-02-05 13:58:34
+* @Last Modified by:   sana
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:red;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #FFF;
+}
+
+li{
+    padding: 10px;
+    margin:10px;
+    background: #eee;
+}
+
+.footer{
+    padding:30px;
+    width: 100%;
+}
+.footer .col-30{
+    width:33%;
+    float:left;
+}
+
+.content{
+    border:1px solid #ccc;
+    padding:30px;
+    width: 900px;
+    margin:0 auto;
+}
+.content li{
+    padding:20px;
+    background:#eee;
+    margin-bottom: 20px;
+}
+.newtest{
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.ubu{
+    margin: 50px;     
+    padding: 30px; 
+
+}
+/****************************/
+.wrapper{
+    padding: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blokfull {
+    background: black;
+    color: white;
+    display: flex;
+    flex: 1 0 auto;
+    min-width: 280px;
+    max-width: 85%;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.blokfull__blok {
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+}
+.blokr{
+
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.blokel{
+    background: black;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex: 0 0 280px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.blokel img{display: block;}
+.blokel:last-child{margin: 0;   }
+/****************************************/
+@media  (max-width:1590px) {
+    .blokfull{
+        width: 70%;
+    }
+}
+@media  (max-width:1200px) {
+    .blokfull{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .blokel:last-child{margin-bottom:30px ;   }
+}
+
+/******************/
+/**
+*ssdfsdfasdfs
+*/

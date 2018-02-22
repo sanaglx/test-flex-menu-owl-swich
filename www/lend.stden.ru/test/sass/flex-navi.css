@@ -1,0 +1,85 @@
+/************************/
+li {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 10px;
+  background: #0fc;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+li:hover {
+  background: #7da0f8;
+}
+
+.toggle-menu {
+  margin-top: 10px;
+  padding: 9px 15px 13px;
+  display: none;
+  position: relative;
+  border-radius: 4px;
+  background: #303030;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*****************************************************/
+.flnav {
+  display: flex;
+}
+
+.search {
+  flex: 1;
+}
+
+.search input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search > li {
+  flex: 1;
+}
+
+@media all and (max-width: 1080px) {
+  .flnav {
+    flex-wrap: wrap;
+  }
+  .flnav > li {
+    flex-basis: 25%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .flnav {
+    flex-wrap: wrap;
+  }
+  .flnav > li {
+    flex-basis: 50%;
+  }
+  .toggle-menu.active, .non-active {
+    display: inline-block;
+  }
+  .primary-menu.hide {
+    display: block;
+  }
+  .primary-menu.show {
+    display: none;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .flnav > li {
+    flex-basis: 100%;
+  }
+  .search {
+    order: 1;
+  }
+}
+/*# sourceMappingURL=flex-navi.css.map */
